@@ -9,6 +9,9 @@ var myobj=[
 var salary=myobj.map(function(n)
 {
   return n.salary;
+}).reduce(function(acc,value){
+
+  return (acc+value);
 })
 
 console.log(salary);
